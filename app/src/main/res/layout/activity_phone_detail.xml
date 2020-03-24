@@ -42,7 +42,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="475dp"
+        android:layout_height="380dp"
         android:layout_marginStart="10dp"
         android:scrollbarStyle="insideInset"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,12 +54,73 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/entire_resep"
+                android:id="@+id/entire_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
                 android:textAlignment="textStart"
                 android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/desc_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="3"
+                    android:text="Email\t\t\t\t:"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/entire_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="auto"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/desc_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="3"
+                    android:text="Website\t\t:"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/entire_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="true"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

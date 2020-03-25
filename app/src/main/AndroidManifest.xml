@@ -17,10 +17,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".PhoneDetailActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:label="@string/detail">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="message/rfc822"/>
+            </intent-filter>
         </activity>
         <activity android:name=".PhoneWebView"
-            android:parentActivityName=".PhoneDetailActivity">
+            android:parentActivityName=".PhoneDetailActivity"
+            android:label="@string/web">
         </activity>
     </application>
 

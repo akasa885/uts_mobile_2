@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UTS MOBILE FIX</string>
+    <string name="detail">FAKULTAS DETAIL</string>
+    <string name="web">HALAMAN WEB</string>
 </resources>
